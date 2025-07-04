@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import WelcomeCard from '@/components/test'
 
 const Dashboard: React.FC = () => {
   return (
@@ -109,6 +110,13 @@ const Dashboard: React.FC = () => {
             </div>
           </CardContent>
         </Card>
+
+
+        <WelcomeCard
+          patientName="John Doe"
+          showAge={true}
+          age={30}
+          />
       </div>
     </div>
   )
